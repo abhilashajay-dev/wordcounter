@@ -1,0 +1,8 @@
+<h1>count page forwarded url</h1>
+<h2>the orginal text {{fulltext}}</h2>
+<h2>count of words {{count}}</h2>
+<a href="{% url 'home' %}">go back</a>
+{% for word, count in worddictionary %}
+<h6>{{word}}{{count}}</h6>
+{% endfor %}
+
